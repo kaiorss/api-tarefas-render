@@ -1,0 +1,12 @@
+{
+  "name": "api-tarefas-render",
+  "version": "1.0.0",
+  "description": "API simples de tarefas com CI/CD",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

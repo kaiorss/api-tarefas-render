@@ -1,0 +1,20 @@
+name: Deploy Render via Tag
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: Verificar tag detectada
+        run: echo "Deploy iniciado para a tag ${GITHUB_REF_NAME}"
+
+      - name: Enviar informação de deploy
+        run: echo "Código será deploiado automaticamente no Render"
